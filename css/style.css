@@ -129,6 +129,11 @@ a:hover {
 .imagen {
     width: 329px;
     margin: 20px 10px 0px 10px;
+    transition-duration: 0.4s;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
 }
 
 .p-novedades {
@@ -239,6 +244,11 @@ a:hover {
 
 .gallery-item {
     position: relative;
+    transition-duration: 0.4s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
 }
 
 h3 {
