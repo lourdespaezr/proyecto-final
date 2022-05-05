@@ -30,139 +30,35 @@ html {
 .nav-title{
     margin-left: 1rem;
     margin-right: 1rem;
+    color:#fff;
+    text-decoration: none;
 }
-/* header .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-
-}
-
-.logo {
-    justify-content: flex-start;
-}
-
-.lista-navbar {
-    justify-content: space-between;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-
-}
-
-ul li {
-    padding: 20px;
-    font-size: 2rem;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-
-} */
-
-/* a {
+.nav-title:hover{
     text-decoration: none;
     color: #fff;
-    display: inline-block;
-    border-bottom: 2px solid #000;
-    transition: .3s;
-
+    opacity: 0.7;
 }
-
-a:hover {
-    border-bottom: 2px solid #fff;
-} */
-
 /* Fin navbar header */
 
 /*INICIO INDEX*/
 
 
-/* Inicio banner */
-.banner {
-    background-image: url(../img/banner-index.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 450px;
-}
+/* Inicio sec index */
 
-/* Fin navbar */
 
-/* Inicio section ¿quiénes somos? */
-.h1 {
-    /* text-align: center; */
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    margin-top: 50px;
-}
-
-.p-principal {
+.novedades__parrafo{
     color: #fff;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     line-height: 1.6;
-    width: 1000px;
-    text-align: center;
-    position: relative;
-    left: 500px;
-    padding-top: 20px;
 }
-
-/* Fin section ¿quiénes somos? */
-
-/* Inicio carrusel novedades */
-.h2-index {
-    background-color: #f2de42;
-    color: black;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.titulo{
+    max-width: 400px;
+    max-height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.carrusel-novedades {
-    display: flex;
-    justify-content: space-around;
-}
-
-.carrusel {
-    display: inline-block;
-
-}
-
-.imagen {
-    width: 329px;
-    margin: 20px 10px 0px 10px;
-    transition-duration: 0.4s;
-}
-
-.imagen:hover {
-    transform: scale(1.1);
-}
-
-.p-novedades {
-    width: 329px;
-    height: 140px;
-    overflow: auto;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    line-height: 1.6;
-    margin: 20px 10px 0px 10px;
-}
-
-/* Fin carrusel novedades */
 
 /* Inicio footer */
 .footer-container {
@@ -187,17 +83,24 @@ a:hover {
 }
 
 /*FIN INDEX*/
+/* INICIO FAQ */
+.faq__titulo{
+    max: width 200px;
+    height: auto;
+}
+.accordion__titulo{
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 
+}
 
 
 /* INICIO CONTACTO */
-.h2 {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-top: 50px;
-}
 
+.contacto__titulo{
+    max-width: 400px;
+}
 .p-contacto {
     color: #fff;
     font-size: 1.5rem;
@@ -206,35 +109,19 @@ a:hover {
     line-height: 1.6;
     width: 1000px;
 }
-
-.img-container {
-    display: flex;
-    justify-content: center;
-}
-
-.img-grilla {
-    margin: 50px;
-    display: block;
-}
-
 /* FIN CONTACTO*/
-
-/*INICIO STAFF*/
-.titulo-staff {
-    display: flex;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    margin-top: 50px;
-    margin-left: 20px;
+.profe__img{
+    max-width: 600px;
 }
+.profe__parrafo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 1.6;
 
-/* .section-staff{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center;*
-} */
+}
+/*INICIO STAFF*/
 
 /* GALLERY */
 
