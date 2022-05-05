@@ -85,7 +85,7 @@ html {
 /*FIN INDEX*/
 /* INICIO FAQ */
 .faq__titulo{
-    max: width 200px;
+    max-width: 200px;
     height: auto;
 }
 .accordion__titulo{
