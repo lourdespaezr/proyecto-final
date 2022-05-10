@@ -15,6 +15,9 @@ html {
 .background-color {
     background-color: #000;
 }
+p::selection{
+    background-color: #f2de42;
+    color: white;}
 
 /* Inicio navbar header */
 .nav-background{
@@ -34,7 +37,7 @@ html {
     text-decoration: none;
 }
 .nav-title:hover{
-    text-decoration: none;
+    text-decoration:none;
     color: #fff;
     opacity: 0.7;
 }
@@ -45,12 +48,16 @@ html {
 
 /* Inicio sec index */
 
-
+.contenedor1{
+    margin-left: 10px;
+}
 .novedades__parrafo{
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #fff;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     line-height: 1.6;
 }
 .titulo{
@@ -120,6 +127,13 @@ html {
     font-weight: lighter;
     line-height: 1.6;
 
+}
+.profe-martu{
+    margin-top: 25px;
+}
+.contenedor1{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*INICIO STAFF*/
 
