@@ -1,0 +1,27 @@
+@import '../base/variables';
+
+footer {
+    background-color: nth($colores, 3);
+    div {
+        div {
+            div {
+                a {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: flex-end;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: nth($colores, 2);
+                    font-size: nth($font-size, 2);
+                }
+            }
+            div {
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: flex-end;
+                }
+            }
+        }
+    }

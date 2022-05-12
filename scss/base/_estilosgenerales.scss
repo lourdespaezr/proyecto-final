@@ -1,0 +1,22 @@
+@import './variables';
+@import './listas';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// font family 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap');
+
+html {font-size: 10px;}
+
+.background-color{
+    background-color: $bg-color-gral;
+}
+
+p::selection{
+background-color:nth($colores , 1 );
+color: nth($colores,2 );
+}

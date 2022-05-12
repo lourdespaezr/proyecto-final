@@ -1,0 +1,29 @@
+@import '../base/variables';
+@import '../base/listas';
+
+header {
+    background-color: $bg-color-gral;
+    nav {
+        .nav-button{
+            font-size: nth($font-size, 1);
+            color: nth($colores, 2);
+            font-weight: bold;
+            justify-content: end;
+        }
+        div {
+            div {
+                a {
+                    .nav-title {
+                        color: nth($colores, 2);
+                        text-decoration: none;
+                    }
+                    .nav-title:hover {
+                        text-decoration: none;
+                        color: nth($colores, 2);
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../base/variables';
+@import '../base/listas';
+
+// Section ¿quienes somos?
+
+body {
+    section {
+        .p-contacto {
+            color: nth($colores, 2);
+            font-size: nth($font-size, 3);
+            font-weight: bold;
+            line-height: 1.6;
+        }
+    }
+}
