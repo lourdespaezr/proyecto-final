@@ -1,4 +1,6 @@
 @import '../base/variables';
+@import'../base/extend';
+@import'../base/maxin';
 
 footer {
     background-color: nth($colores, 3);
@@ -7,16 +9,14 @@ footer {
         div {
             div {
                 .logo-footer {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    justify-content: flex-start;
+                    @extend %flex;
+                    @include flex (flex-start, nowrap);
                     margin-top: 10px;
                     margin-bottom: 10px;
                 }
                 .icono-footer{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-end;
+                    @extend %flex;
+                    @include flex (space-between, nowrap);
                 }
             }
         }

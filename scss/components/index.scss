@@ -15,8 +15,7 @@ body {
         .p-contacto {
             color: nth($colores, 2);
             font-size: nth($font-size, 1);
-            font-weight: lighter;
-            line-height: 1.6;
+            @extend %tipografia;
         }
     }
 }
@@ -28,12 +27,11 @@ div {
             div {
                 div {
                     .novedades__parrafo {
+                        @extend %tipografia;
                         padding-top: 10px;
                         padding-bottom: 10px;
-                        color: nth($colores, 2);
                         font-size: nth($font-size, 2);
-                        font-weight: bold;
-                        line-height: 1.6;
+                        font-weight: bolder;
                     }
                 }
             }

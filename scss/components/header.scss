@@ -1,22 +1,28 @@
 @import '../base/variables';
 @import '../base/listas';
+@import '../base/map';
 
 header {
     background-color: $bg-color-gral;
+
     nav {
-        .nav-button{
-            font-size: nth($font-size, 1);
+        .nav-button {
+            font-size: map-get($navboton, font-size);
             color: nth($colores, 2);
-            font-weight: bold;
-            justify-content: end;
+            font-weight: map-get($navboton , font-weight);
+            justify-content: map-get($navboton, justify-content);
         }
+
         div {
             div {
                 a {
                     .nav-title {
                         color: nth($colores, 2);
                         text-decoration: none;
+                        padding-left: 10px;
+                        padding-right: 10px;
                     }
+
                     .nav-title:hover {
                         text-decoration: none;
                         color: nth($colores, 2);
