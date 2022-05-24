@@ -45,7 +45,7 @@ footer div div div .icono-footer, footer div div div .logo-footer {
   align-items: center;
 }
 
-body main section div div div .tittle, div section div div div .novedades__parrafo, body section .p-contacto {
+.profe__parrafo, main section div div div a h4 .tittle, div section div div div .novedades__parrafo, body section .p-contacto {
   font-family: "Montserrat", sans-serif;
   color: white;
   line-height: 1.6;
@@ -89,14 +89,48 @@ footer div div div .logo-footer, footer div div div .icono-footer {
   align-items: center;
 }
 
-body main section div div div .tittle, body section .p-contacto, div section div div div .novedades__parrafo {
+.profe__parrafo, main section div div div a h4 .tittle, body section .p-contacto, div section div div div .novedades__parrafo {
   font-family: "Montserrat", sans-serif;
   color: white;
   line-height: 1.6;
 }
 
-body main section div div div .gallery-img:hover {
+main section div div div a img .gallery-item {
+  position: relative;
+  transition-duration: 0.4s;
+}
+main section div div div a img .gallery-item:hover {
   transform: scale(1.1);
+}
+footer div div div .logo-footer, footer div div div .icono-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.profe__parrafo, body section .p-contacto, div section div div div .novedades__parrafo, main section div div div a h4 .tittle {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.profe__img {
+  max-width: 600px;
+  padding-left: 10px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.profe__parrafo {
+  justify-content: flex-start;
+  font-size: 15px;
+}
+
+.contenedor1 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

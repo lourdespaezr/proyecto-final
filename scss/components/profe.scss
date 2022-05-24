@@ -1,0 +1,23 @@
+@import '../base/extend';
+@import '../base/listas';
+
+
+.profe__img {
+    max-width: 600px;
+    padding-left: 10px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.profe__parrafo{
+    @extend %tipografia;
+    justify-content:flex-start;
+    font-size: nth($font-size,2 );
+}
+
+.contenedor1{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 200px;
+}

@@ -1,0 +1,47 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extend';
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    div{
+                        div{
+                            div{
+                                img{
+                                    .titulo{
+                                        max-width: 400px;
+                                        max-height: auto;
+                                        margin-top: 20px;
+                                        margin-bottom: 20px;
+                                    }
+                                    p{
+                                        .p-contacto{
+                                            color: nth($colores, 2);
+                                            font-size: nth($font-size, 1);
+                                            @extend %tipografia;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.p-contacto{
+    color: nth($colores, 2);
+    font-size: nth($font-size, 1);
+    @extend %tipografia;
+}

@@ -1,20 +1,28 @@
 @import '../base/extend';
 
-body {
     main {
         section {
             div {
                 div {
                     div {
-                        .gallery-img:hover {
-                            transform: scale(1.1);
-                        }
-                        .tittle {
-                            @extend %tipografia
+                        a{
+                            img{
+                                .gallery-item {
+                                    position: relative;
+                                    transition-duration: 0.4s;
+                                }
+                                .gallery-item:hover {
+                                    transform: scale(1.1);
+                                }
+                            }
+                            h4{
+                                .tittle {
+                                    @extend %tipografia
+                                }
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
