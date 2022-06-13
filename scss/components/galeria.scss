@@ -17,8 +17,11 @@ main {
             }
             .galeria__img:hover {
                 filter: grayscale(0) brightness(1);
+                @media only screen and (max-width:960px){
+                    filter: none;
             }
         }
+    }
     }
 }
 
