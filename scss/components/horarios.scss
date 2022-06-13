@@ -1,0 +1,82 @@
+// Inicio section texto horarios
+main {
+    div {
+        .titulo__principal {
+            max-width: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .parrafo__general {
+            color: nth($colores, 2);
+
+            @media (min-width: 961px) {
+                font-size: nth($font-size, 1);
+            }
+
+            @extend %tipografia;
+
+            @media (max-width:450px) {
+                font-size: nth($font-size , 3);
+            }
+
+            @media (min-width:451px),
+            (max-width:960px) {
+                font-size: nth($font-size, 2);
+            }
+        }
+    }
+}
+
+// fin section texto horarios
+
+
+// Inicio section grilla de horarios
+section {
+    div {
+        .horario__sala {
+            max-width: 960px;
+            margin-top: 15px;
+            justify-content: center;
+
+            @media only screen and (max-width: 960px) {
+                display: none;
+            }
+
+            }
+
+        }
+    }
+
+    .horario__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        margin: 20px;
+
+        @media only screen and (max-width:550px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 5px;
+
+        }
+    
+    }
+
+    
+    .horario__img{
+        @media only screen and (min-width: 961px) {
+            display: none;
+        }
+        @media only screen and (max-width:960px){
+            padding-left: 10px;
+            padding-right: 10px;
+            row-gap: 10px;
+            column-gap: 30px;
+            justify-items: center;
+            grid-column: span 1;
+            grid-row: span 1;
+            position: relative;
+        }
+        }
+    

@@ -5,36 +5,65 @@
 
 body {
     section {
-        .titulo {
+        .titulo__principal {
             max-width: 600px;
             max-height: auto;
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        .p-contacto {
-            color: nth($colores, 2);
-            font-size: nth($font-size, 1);
-            @extend %tipografia;
-        }
-    }
-}
+        .parrafo__general {
 
-// Section novedades
-div {
-    section {
-        div {
-            div {
-                div {
-                    .novedades__parrafo {
-                        @extend %tipografia;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        font-size: nth($font-size, 2);
-                        font-weight: bolder;
-                    }
-                }
+            color: nth($colores, 2);
+
+            @media (min-width: 961px) {
+                font-size: nth($font-size, 1);
+            }
+
+            @extend %tipografia;
+
+            @media (max-width:450px) {
+                font-size: nth($font-size , 3);
+            }
+
+            @media (min-width:451px),
+            (max-width:960px) {
+                font-size: nth($font-size, 2);
             }
         }
     }
 }
+
+
+// Section novedades
+
+section {
+    div {
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            .novedades__img {
+                max-width: 300px;
+                @media (max-width:450px) {
+                max-width: 200px;
+                    
+                }
+                }
+            
+
+            .novedades__texto {
+                    @extend %tipografia;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: nth($font-size, 2);
+                    font-weight: bolder;
+                }
+
+            }
+        }
+    }

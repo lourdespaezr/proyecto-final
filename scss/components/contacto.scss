@@ -2,46 +2,88 @@
 @import '../base/listas';
 @import '../base/extend';
 
-main{
-    div{
-        div{
-            div{
-                div{
-                    div{
-                        div{
-                            div{
-                                img{
-                                    .titulo{
-                                        max-width: 400px;
-                                        max-height: auto;
-                                        margin-top: 20px;
-                                        margin-bottom: 20px;
-                                    }
-                                    p{
-                                        .p-contacto{
-                                            color: nth($colores, 2);
-                                            font-size: nth($font-size, 1);
-                                            @extend %tipografia;
-                                        }
+main {
+    div {
+        div {
+            div {
+                div {
+                    div {
+                        div {
+                            .contacto__redes{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 20px;
+                            }
+                            .contacto__redes--icono {
+                                float: left;
+                                vertical-align: middle;
+                                max-width: 55px;
+                                max-height: 55px;
+                                margin-right: 15px;
 
-                                    }
+                                @media only screen and (max-width:450px){
+                                    max-width: 40px;
+                                    max-height: 40px;
                                 }
                             }
+                            .contacto__redes--texto{
+                                @extend %tipografia;
+                                font-size: nth($font-size, 2);
+                                font-weight: bolder;
+
+                                @media only screen and (max-width: 450px){
+                                font-size: nth($font-size, 3);}
+                            }
+
+                            div {
+                                .contacto__form--title {
+                                    @extend %tipografia;
+                                    font-size: nth($font-size, 2);
+                                    font-weight: bolder;
+                                }
+
+                                .contacto__input {
+                                    outline-style: solid;
+                                    outline-width: 1.5px;
+                                    outline-color: nth($colores, 1);
+                                    background-color: black;
+                                    width: 480px;
+                                    border-radius: 5px;
+                                    height: 30px;
+                                    margin-top: 5px;
+                                    margin-bottom: 10px;
+                                    margin-right: 15px;
+                                    color: white;
+                                    @extend %tipografia;
+                                    font-size: nth($font-size, 2);
+
+                                    @media only screen and (max-width:960px) {
+                                    max-width: 380px;
+                                    }
+                                    
+                                }
+
+                                .textarea {
+                                    height: 200px;
+
+                                }
+
+                                .contacto__form--button {
+                                    background-color: nth($colores, 1);
+                                    border-radius: 5px;
+                                    @extend %tipografia;
+                                    font-size: nth($font-size, 2);
+                                    color: black;
+                                    font-weight: bolder;
+                                    width: 60px;
+                                    height: 35px;
+                                }
+                            }
+
                         }
                     }
                 }
             }
         }
     }
-}
-
-
-
-
-
-
-.p-contacto{
-    color: nth($colores, 2);
-    font-size: nth($font-size, 1);
-    @extend %tipografia;
 }

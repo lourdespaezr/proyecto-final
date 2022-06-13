@@ -3,21 +3,52 @@
 
 
 .profe__img {
-    max-width: 600px;
-    padding-left: 10px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
+    justify-content: center;
     align-items: center;
     padding-right: 10px;
+
+
+    @media only screen and (max-width:450px) {
+        max-width: 250px;
+        padding-left: 10px;
+        justify-content: center;
+    }
 }
 
-.profe__parrafo{
+
+.profe__titulo {
+    max-width: 500px;
+
+    @media only screen and (max-width:450px) {
+        max-width: 250px;
+    }
+}
+
+.profe__parrafo {
     @extend %tipografia;
-    justify-content:flex-start;
-    font-size: nth($font-size,2 );
+    justify-content: center;
+    font-size: nth($font-size, 2);
 }
 
-.contenedor1{
-    margin-bottom: 10px;
+.profes__contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     max-width: 200px;
+
+    @media only screen and (max-width:450px) {
+            max-width: 250px;
+            padding-left: 10px;
+            justify-content: center;
+        }
+    }
+
+
+.profes__contenedor:hover {
+    transform: scale(1.1);
 }

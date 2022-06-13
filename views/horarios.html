@@ -8,7 +8,7 @@
     <title>MOVst|Horarios</title>
     <link rel="shortcut icon" href="../img/Logo-01.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -18,22 +18,22 @@
     <header class="header-container">
 
         <!-- Inicio navbar header -->
-        <nav class="navbar navbar-expand-lg nav-background">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo-02.png" alt="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo-02.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end nav-button" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-end nav__button" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link nav-title" aria-current="page" href="./horarios.html">Horarios</a>
-                        <a class="nav-link nav-title" href="./staff.html">Staff</a>
-                        <a class="nav-link nav-title" href="./faq.html">Preguntas frecuentes</a>
-                        <a class="nav-link nav-title" href="./contacto.html">Contacto</a>
+                        <a class="nav-link nav__title" aria-current="page" href="./horarios.html">Horarios</a>
+                        <a class="nav-link nav__title" href="./staff.html">Staff</a>
+                        <a class="nav-link nav__title" href="./galeria.html">Galería</a>
+                        <a class="nav-link nav__title" href="./contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -44,50 +44,54 @@
 
     <main>
         <!--Inicio section texto horarios-->
-    <center>
-        <img class="img-fluid col-6 d-flex titulo" src="../img/grilla.png" alt="titulo-novedades">
-        <p class="p-contacto">En MOVst podés aprender y entrenar los diferentes estilos de Street Dance y fusión. Capacitate profesionalmente en nuestra escuela para bailarines.</p>
-    </center>
-        
+        <div>
+            <center>
+                <img class="titulo__principal" src="../img/grilla.png" alt="titulo-novedades">
+                <p class="parrafo__general">En MOVst podés aprender y entrenar los diferentes estilos de Street Dance y
+                    fusión. Capacitate profesionalmente en nuestra escuela para bailarines.</p>
+            </center>
+        </div>
+
         <!--Fin section texto horarios-->
+
+        <!-- Inicio section grilla de horarios -->
 
         <section>
             <center>
-            <div class="horario-container">
-                <center>
-                <img class="sala1" src="../img/sala1-07.png" alt="sala 1">
+                <div class="horario__container">
+                    <center>
+                        <img class="horario__sala" src="../img/grilla-horarios-02.png" alt="horarios">
+                    </center>
+
             </center>
-                <div class="horario-item">
-                    <img class="horario-img" src="../img/grilla lunes sala1-05.png" alt="lunes sala1">
-                    <img class="horario-img" src="../img/grilla martes sala1-05.png" alt="martes sala1">
-                    <img class="horario-img" src="../img/grilla miercoles sala1-05.png" alt="miercoles sala1">
-                    <img class="horario-img" src="../img/grilla jueves sala1-05.png" alt="jueves sala1">
-                    <img class="horario-img" src="../img/grilla viernes sala1-05.png" alt="viernes sala1">
-                </div>
+            <div class="horario__container justify-content-center">
+                <div class="horario__img "><img src="../img/grilla lunes sala1-05.png"></div>
+                <div class="horario__img"><img src="../img/grilla martes sala1-05.png" alt=""></div>
+                <div class="horario__img"><img src="../img/grilla miercoles sala1-05.png" alt=""></div>
+                <div class="horario__img"><img src="../img/grilla jueves sala1-05.png" alt=""></div>
+                <div class="horario__img"><img src="../img/grilla jueves sala1-05.png" alt=""></div>
             </div>
-        </center>
+            </center>
         </section>
-        <!--Fin imagenes grilla de horario-->
+        <!--Fin section grilla de horarios-->
     </main>
 
     <!-- Inicio footer -->
-    <footer class="footer-container">
-        <div>
-            <img class="logo-footer" src="../img/logo-02.png" alt="logo">
+    <footer>
+        <div class="footer">
+            <img src="../img/logo-02.png" alt="logo footer">
         </div>
-        <div>
-            <nav class="nav-footer">
-                <ul class="lista-footer">
-                    <li>
-                        <img class="icono-footer" src="../img/icono-instagram-04.png" alt="Instagram">
-                    </li>
-                    <li>
-                        <img class="icono-footer" src="../img/icono-mail-04.png" alt="E-mail">
-                    </li>
-                </ul>
-            </nav>
+        <div class="footer__contacto">
+            <a href=""><img class="footer__icono" src="../img/logo-mail-02.png" alt="Enlace mail">
+            </a>
+            <a href="https://www.instagram.com/"><img class="footer__icono" src="../img/logo-instagram-04.png"
+                    alt="Enlace instagram">
+            </a>
+            <a
+                href="https://www.google.com/maps?ll=-34.573044,-58.448255&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=11544305599863710440"><img
+                    class="footer__icono" src="../img/logo-ubicación-03.png" alt="Enlace google maps">
+            </a>
         </div>
-
     </footer>
     <!-- Fin footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"

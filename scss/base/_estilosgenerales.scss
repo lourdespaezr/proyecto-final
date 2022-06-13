@@ -19,3 +19,6 @@ p::selection{
 background-color:nth($colores , 1 );
 color: nth($colores,2 );
 }
+body{
+    height: 100vh;
+}
